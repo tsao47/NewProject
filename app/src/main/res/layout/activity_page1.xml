@@ -12,6 +12,15 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+    <TextView
+        android:text="請選擇抽籤人數"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/textView2"
+        android:textSize="36sp"
+        android:layout_marginTop="50dp"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

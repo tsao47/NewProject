@@ -13,17 +13,20 @@
     android:weightSum="1">
 
     <TextView
-        android:text="簡單的抽籤遊戲，數字旁的加減號可以選擇遊戲人數，人數為2~8人。按下「開始」即可進行抽籤"
+        android:text="簡易的抽籤遊戲  ~  數字旁的加減號可以調整參與抽籤人數，人數限制2~8人，中籤者設定為1人。按下「START」即可進行抽籤 ! ! !"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:layout_weight="0.95"
-        android:textSize="25sp" />
+        android:textSize="40sp"
+        android:layout_weight="0.13" />
+
+
 
     <Button
-        android:layout_width="46dp"
         android:layout_height="41dp"
+        android:layout_width="46dp"
         android:id="@+id/gohome2"
-        android:background="@drawable/gohome"
-        android:layout_marginTop="300dp" />
+        android:layout_marginTop="190dp"
+        android:background="@drawable/gohome"/>
+
 </LinearLayout>
