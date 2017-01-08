@@ -1,9 +1,8 @@
 package com.example.kjbkjjn.badmatch;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +23,7 @@ public class page2 extends AppCompatActivity {
     Button gohome1;
     Button retry;
 
+
     int randomnum2,randomnum3,randomnum4,randomnum5,randomnum6,randomnum7,randomnum8;
 
     @Override
@@ -43,6 +43,7 @@ public class page2 extends AppCompatActivity {
         btn8 = (Button) findViewById(R.id.button8);
         gohome1 = (Button)findViewById(R.id.gohome1);
         retry = (Button)findViewById(R.id.retry);
+
 //----------------------------看數字顯示多少按鈕-------------------------------
         if(playernum==2){
             btn2.setVisibility(View.INVISIBLE);
@@ -1601,14 +1602,6 @@ public class page2 extends AppCompatActivity {
         retry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*btn1.setEnabled(true);
-                btn2.setEnabled(true);
-                btn3.setEnabled(true);
-                btn4.setEnabled(true);
-                btn5.setEnabled(true);
-                btn6.setEnabled(true);
-                btn7.setEnabled(true);
-                btn8.setEnabled(true);*/
                 finish();
                 startActivity(getIntent());
 
@@ -1620,7 +1613,7 @@ public class page2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
-                i.setClass(page2.this,page1.class);
+                i.setClass(page2.this,ad.class);
                 startActivityForResult(i,0);
             }
         });
